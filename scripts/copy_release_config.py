@@ -62,7 +62,7 @@ if (len(json_content['release_configs'])) > 0:
     rel_config_details['custom_attributes'] = rel_config['custom_attributes']
     print(rel_config_details)
     res = post(post_query,rel_config_details)
-    print("Response Code %s" % (res))
+    print("Response Code %s" % (res.getcode()))
     
 else:
 	print("No data found")
